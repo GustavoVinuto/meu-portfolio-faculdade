@@ -1,0 +1,117 @@
+/* Modifica todos os elementos do site de uma vez só */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Define a fonte padrão do site */
+}
+
+/* Aplica efeito na página inteira */
+html {
+    scroll-behavior: smooth; /* Faz a tela rolar macio ao clicar no menu */
+}
+
+/* Modifica o fundo e a cor geral do texto */
+body {
+    background-color: #f5f6fa;
+    color: #2f3640;
+}
+
+/* Barra do topo do site */
+header {
+    position: fixed; /* Deixa o menu travado no topo mesmo rolando a tela */
+    top: 0;
+    left: 0;
+    width: 100%; /* Força o cabeçalho a ocupar a largura inteira */
+    background-color: #2c3e50;
+    z-index: 1000; /* Força o menu a ficar por cima de tudo */
+}
+
+/* Configuração interna da lista do menu */
+header nav ul {
+    display: flex; /* Alinha os itens da lista lado a lado */
+    justify-content: center; /* Centraliza o menu na tela */
+    list-style: none; /* Tira as bolinhas padrão da lista */
+}
+
+/* Espaçamento dos blocos do menu */
+header nav ul li {
+    padding: 18px 22px;
+}
+
+/* Estilo dos textos dos links clicáveis */
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold;
+}
+
+/* Efeito visual ao passar o ponteiro do mouse */
+header nav ul li a:hover {
+    color: #00a8ff; /* Muda para a cor azul */
+}
+
+/* Configuração de cada bloco de conteúdo */
+section {
+    padding: 100px 20px 60px 20px; /* Margem superior para o texto não sumir sob o menu fixo */
+    max-width: 750px; /* Limita a largura do texto para não espalhar na tela toda */
+    margin: 0 auto; /* Centraliza as seções na tela */
+    border-bottom: 1px solid #dcdde1; /* Cria uma linha fina de divisão */
+}
+
+/* Título de cada área */
+section h2 {
+    margin-bottom: 15px;
+}
+
+/* Parágrafos de texto */
+section p {
+    margin-bottom: 10px;
+    line-height: 1.6; /* Melhora o espaçamento entre linhas */
+}
+
+/* Estrutura visual do formulário */
+#formContato {
+    display: flex;
+    flex-direction: column; /* Empilha os campos um abaixo do outro */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px; /* Arredonda os cantos da caixa */
+}
+
+/* Margem abaixo de cada etiqueta */
+#formContato label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Caixas de input e área de texto */
+#formContato input, 
+#formContato textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Restrição de tamanho para a caixa de mensagem */
+#formContato textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Estilo do botão verde de envio */
+#formContato button {
+    background-color: #4cd137;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer; /* Coloca o ícone de mãozinha ao passar o mouse */
+}
+
+/* Cor do botão mudando com o mouse em cima */
+#formContato button:hover {
+    background-color: #44bd32;
+}

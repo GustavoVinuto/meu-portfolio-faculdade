@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- Indica que deve usar versão mais nova do HTML-->
+
+<html lang="pt-BR"> <!-- Define o idioma-->
+
+    <head> <!--Local onde descrevo o que está por trás do site.-->
+
+        <meta charset="UTF-8"> <!--Garante que seja lido os carcteres and acentos do idioma-->
+
+        <title>Meu portfólio - Gustavo Vinuto</title> <!--Como próprio nome diz, o título da página.-->
+
+        <link rel="stylesheet" href="style.css"> <!--Conecta o arquivo de estilos CSS-->
+
+    </head> <!--Fechamento do head inicial, parte oculta.-->
+
+    <body> <!--Corpo do doc-->
+
+        <header> <!--Cabeçalho ou topo-->
+
+            <nav> <!--Navegação-->
+
+                <ul> <!--Lista não ordenada-->
+
+                    <li><a href="#sobre">Sobre mim</a></li> <!--Item clicável da lista-->
+
+                    <li><a href="#formacao">Formação</a></li> <!--Item da lista-->
+
+                    <li><a href="#portfolio">Portfólio</a></li> <!--Item da lista-->
+
+                    <li><a href="#contato">Contato</a></li> <!--Item da lista-->
+
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <main> <!--Indica o conteúdo central da página-->
+
+            <section id="sobre"> <!--Dividi em áreas temáticas separadas-->
+
+                <h2>Sobre Mim</h2> <!--Segundo título, usado nas secções-->
+
+                <p><strong>Graduação em Engenharia de Software e atualmente atuo como estagiário na Área de TI</strong></p> <!--Paragrafo e o texto fica em negrito-->
+
+                <p>Aqui estão alguns dos projetos e tecnologias com os quais venho trabalhando, com sistemas de inventário e automações.</p>
+
+            </section>
+
+            <section id="formacao">
+
+                <h2>Formação Acadêmica</h2>
+
+                <p>Centro Universitário Internacional UNINTER | Início: 2025</p>
+
+            </section>
+
+            <section id="portfolio">
+
+                <h2>Portfólio</h2>
+
+                <p>Desenvolvimento focado em projetos pessoais.</p>
+
+            </section>
+
+            <section id="contato">
+
+                <h2>Contato</h2>
+
+
+
+                <form id="formContato"> <!--É a caixa que embrulha todos os campos de captura de dados. O id vai ser usado pelo JavaScript quando o botão for clicado-->
+
+                    <label for="nome">Nome:</label> <!--Etiqueta que indica o que deve ser digitado-->
+
+                    <input type="text" id="nome"> <!--Cria uma caixa de texto de uma única linha para o usário digitar. Id faz conexão com o label-->
+
+
+
+                    <label for="email">E-mail:</label>
+
+                    <input type="email" id="email">
+
+
+
+                    <label for="mensagem">Mensagem:</label>
+
+                    <textarea id="mensagem"></textarea>
+
+
+
+                    <button type="submit">Enviar Mensagem</button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <script src="script.js"></script> <!--Conecta o arquivo de lógica JavaScript-->
+
+    </body>
+
+</html>
